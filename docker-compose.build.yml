@@ -1,0 +1,12 @@
+version: "3"
+services:
+  sample:
+    image: sample-lara-image:latest
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+      args: 
+        ONBUILD_VARIABLE: ${ONBUILD_VAR_LOCAL}
+    container_name: sample-image
+
+

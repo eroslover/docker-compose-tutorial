@@ -1,0 +1,8 @@
+version: "3"
+services:
+  sample:
+    image: sample-lara-image:latest
+    container_name: sample-image
+    env_file:
+    - run.env
+
